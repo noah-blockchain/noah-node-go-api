@@ -33,6 +33,7 @@
 # .idea/*.iml
 # .idea/modules
 
+vendor/
 # CMake
 cmake-build-*/
 
