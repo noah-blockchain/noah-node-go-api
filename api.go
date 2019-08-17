@@ -2,15 +2,15 @@ package noah_node_go_api
 
 import (
 	"fmt"
-	"github.com/tendermint/go-amino"
-	"github.com/noah-blockchain/noah-explorer-tools/models"
-	"github.com/noah-blockchain/noah-node-go-api/responses"
-	"github.com/tendermint/go-amino"
-	"github.com/valyala/fasthttp"
 	"net/url"
 	"strconv"
 	"strings"
 	"time"
+
+	"github.com/noah-blockchain/noah-explorer-tools/models"
+	"github.com/noah-blockchain/noah-node-go-api/responses"
+	"github.com/tendermint/go-amino"
+	"github.com/valyala/fasthttp"
 )
 
 type NoahNodeApi struct {
