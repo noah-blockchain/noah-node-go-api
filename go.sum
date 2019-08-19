@@ -7,8 +7,14 @@ github.com/klauspost/compress v1.4.0 h1:8nsMz3tWa9SWWPL60G1V6CUsf4lLjWLTNEtibhe8
 github.com/klauspost/compress v1.4.0/go.mod h1:RyIbtBH6LamlWaDj8nUwkbUhJ87Yi3uG0guNDohfE1A=
 github.com/klauspost/cpuid v0.0.0-20180405133222-e7e905edc00e h1:+lIPJOWl+jSiJOc70QXJ07+2eg2Jy2EC7Mi11BWujeM=
 github.com/klauspost/cpuid v0.0.0-20180405133222-e7e905edc00e/go.mod h1:Pj4uuM528wm8OyEC2QMXAi2YiTZ96dNQPGgoMS4s3ek=
+<<<<<<<
 github.com/noah-blockchain/noah-explorer-tools v0.1.0 h1:PW4nsORdRmpPdvUpV7i7Oa+odjQn2EWuiI6PzawcpNw=
 github.com/noah-blockchain/noah-explorer-tools v0.1.0/go.mod h1:6s81RdmnvrxHCwH7TN/VLOmtbfypBBLjKv/ItmaEidw=
+=======
+github.com/noah-blockchain/noah-explorer-tools v0.0.0-20190806123704-630f7c52b596 h1:wDNY0YyHi9QhN8DRVGEfq44cmXw7P1Nd4OUysA/TZLo=
+github.com/noah-blockchain/noah-explorer-tools v0.0.0-20190806123704-630f7c52b596/go.mod h1:6s81RdmnvrxHCwH7TN/VLOmtbfypBBLjKv/ItmaEidw=
+github.com/noah-blockchain/noah-explorer-tools v0.1.0/go.mod h1:6s81RdmnvrxHCwH7TN/VLOmtbfypBBLjKv/ItmaEidw=
+>>>>>>>
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
