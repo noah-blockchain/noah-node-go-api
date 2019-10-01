@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/noah-blockchain/go-amino"
 	"github.com/noah-blockchain/noah-explorer-tools/models"
 	"github.com/noah-blockchain/noah-node-go-api/responses"
+	"github.com/tendermint/go-amino"
 	"github.com/valyala/fasthttp"
 )
 
