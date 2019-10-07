@@ -23,7 +23,6 @@ type NoahNodeApi struct {
 }
 
 func New(link string) *NoahNodeApi {
-	// Initialization
 	cdc := amino.NewCodec()
 
 	return &NoahNodeApi{
