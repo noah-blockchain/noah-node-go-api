@@ -2,14 +2,15 @@ package noah_node_go_api
 
 import (
 	"fmt"
+	"log"
 	"net/url"
 	"strconv"
 	"strings"
 	"time"
 
+	"github.com/MinterTeam/go-amino"
 	"github.com/noah-blockchain/noah-explorer-tools/models"
 	"github.com/noah-blockchain/noah-node-go-api/responses"
-	"github.com/tendermint/go-amino"
 	"github.com/valyala/fasthttp"
 )
 
@@ -29,6 +30,7 @@ func New(link string) *NoahNodeApi {
 		link: link,
 		client: &fasthttp.Client{
 			Name:                "Explorer Extender API",
+			ReadTimeout:         time.Minute,
 			MaxIdleConnDuration: 5,
 		},
 		cdc: cdc,
@@ -308,6 +310,7 @@ func (api *NoahNodeApi) getJson(url string, target interface{}) error {
 				return err
 			}
 
+			log.Println(body)
 			err = api.cdc.UnmarshalJSON(body, target)
 
 			return err
