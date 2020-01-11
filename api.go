@@ -2,7 +2,6 @@ package noah_node_go_api
 
 import (
 	"fmt"
-	"log"
 	"net/url"
 	"strconv"
 	"strings"
@@ -310,9 +309,7 @@ func (api *NoahNodeApi) getJson(url string, target interface{}) error {
 				return err
 			}
 
-			log.Println(body)
 			err = api.cdc.UnmarshalJSON(body, target)
-
 			return err
 		})()
 		if err == nil {
