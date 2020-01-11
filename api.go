@@ -7,9 +7,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/MinterTeam/go-amino"
 	"github.com/noah-blockchain/noah-explorer-tools/models"
 	"github.com/noah-blockchain/noah-node-go-api/responses"
-	"github.com/tendermint/go-amino"
 	"github.com/valyala/fasthttp"
 )
 
@@ -23,13 +23,13 @@ type NoahNodeApi struct {
 }
 
 func New(link string) *NoahNodeApi {
-	// Initialization
 	cdc := amino.NewCodec()
 
 	return &NoahNodeApi{
 		link: link,
 		client: &fasthttp.Client{
 			Name:                "Explorer Extender API",
+			ReadTimeout:         time.Minute,
 			MaxIdleConnDuration: 5,
 		},
 		cdc: cdc,
@@ -310,7 +310,6 @@ func (api *NoahNodeApi) getJson(url string, target interface{}) error {
 			}
 
 			err = api.cdc.UnmarshalJSON(body, target)
-
 			return err
 		})()
 		if err == nil {

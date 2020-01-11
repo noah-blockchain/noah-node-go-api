@@ -34,8 +34,8 @@ type BlockCandidatesResponse struct {
 }
 
 type Stake struct {
-	Owner    string `json:"owner"`
-	Coin     string `json:"coin"`
-	Value    string `json:"value"`
-	BipValue string `json:"bip_value"`
+	Owner     string `json:"owner"`
+	Coin      string `json:"coin"`
+	Value     string `json:"value"`
+	NoahValue string `json:"noah_value"`
 }
